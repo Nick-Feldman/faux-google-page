@@ -1,0 +1,186 @@
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+
+.header ul{
+    list-style-type: none;
+}
+
+.header ul#right {
+    
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.header a.button{
+   background-color: #4683ea;
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: bold;
+   padding-bottom: .4em;
+   padding-top: .4em;
+   padding-left: .8em;
+   padding-right: .8em;    
+}
+
+.header a.text{
+    margin: 1em;
+    text-decoration: none;
+    color: #000000;
+    font-size: 10pt;
+}
+
+.header a.text:hover {
+    text-decoration: underline;
+}
+
+.header ul#right a.text:hover {
+    color: #5f6368; 
+}
+
+.header a.icon img{
+    margin-right: 1.5em;
+    margin-top: -.15em;
+    width: 20px;
+    height: 20px;
+    opacity: .55;
+}
+
+.header a.icon img:hover {
+    opacity: 1;
+}
+
+
+.header ul#left{
+    display: flex;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 150px auto 400px;
+}
+.header ul#left{
+    grid-column:1;
+    grid-row: 1;
+}
+
+.header ul#right{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.footer {
+   display: grid; 
+   grid-template-columns: 250px auto 250px;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   width: 100%;
+   background-color: rgb(240,240,240);
+   border-top: 1px solid #e4e4e4;
+   
+}
+
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer a.text {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: small;
+}
+
+.footer ul#rightf {
+    display: flex;
+    grid-row: 1;
+    grid-column: 3;
+    justify-content:  space-around;
+}
+
+.footer ul#leftf {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: space-around;
+}
+
+.footer a.text:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    font-size: 64pt;
+    font-stretch: expanded;
+    margin-left: 35%;
+    margin-top: 11%;
+    display: flex;
+}
+#logo div{
+    margin: .1em;
+}
+
+#logo #g{
+    color: blue;
+}
+
+#logo #o {
+    color: red;
+}
+
+#logo #o2 {
+    color: yellow;
+}
+
+#logo #g2 {
+    color: blue;
+}
+
+#logo #l {
+    color: green;
+}
+
+#e {
+    color: red;
+    transform: rotate(-10deg);
+}
+
+#search{
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 32%;
+    border: 1px solid #e4e4e4;
+    
+}
+#search:hover{
+    box-shadow: 0px 1px #a4a4a4;
+}
+
+#mic{
+    width: 15px;
+    position: absolute;
+    left: 900px;
+    top: 337px;
+    
+}
+
+#gs {
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    left: 550px;
+    top: 405px;
+}
+
+#ifl {
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    left: 700px;
+    top: 405px;
+}
